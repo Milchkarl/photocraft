@@ -13,8 +13,6 @@ name: Perf (nightly)
 # runner is never idle) and commit perf/baseline.json and docs/scorecard.md in a PR.
 
 on:
-  schedule:
-    - cron: "23 3 * * *"
   workflow_dispatch:
     inputs:
       quick:

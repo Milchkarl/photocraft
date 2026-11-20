@@ -3,11 +3,6 @@
 name: Packaging lint
 
 on:
-  push:
-    branches: [main, release]
-    paths: [".github/workflows/**", "packaging/**", "assets/app-icon/**", "docs/mcp.md", "docs/control-protocol.md"]
-  pull_request:
-    paths: [".github/workflows/**", "packaging/**", "assets/app-icon/**", "docs/mcp.md", "docs/control-protocol.md"]
   workflow_dispatch:
 
 permissions:

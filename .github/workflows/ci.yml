@@ -6,13 +6,6 @@ name: CI
 # the Linux gate alone runs a cold build: the safety net for the workspace crates it keeps between
 # runs (`cache-workspace-crates`), and a fresh start for that cache entry.
 on:
-  push:
-    branches: [main]
-  schedule:
-    - cron: "11 3 * * *"
-  pull_request:
-    # `labeled` so that adding `full-ci` to an open PR starts a run with Windows in it.
-    types: [opened, synchronize, reopened, labeled]
   workflow_dispatch:
     inputs:
       full_sweep:
